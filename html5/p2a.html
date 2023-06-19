@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <head>
+<body>
+    <h3>Dyanamic progress bar</h3>
+
+    <h5 id="result"></h5>
+    <progress min="0 max=100" value="10"></progress>
+
+    <script>
+        var pro = document.querySelector('progress');
+        var x =0;
+        
+        function add (){
+            x+= 10;}
+            if(x <=100){
+                pro.value = x;
+            } else {
+                alert("file downloading completed")
+                return
+            }
+            </Script>
+        
+</body>
+</head>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+    
+    
+    
+    
+    
+    
+    
+    , initial-scale=1.0"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--
+        action => server file/ path ()
+        method => post -> hide the data
+        | | | Get -> display the bata in url 
+    -->
+    <form action="http://localhost/server.php" method="get" autocomplete="off">
+      <fieldset>
+        <legend><h3>LOGIN PAGE</h3></legend>
+
+        <label for="user"> Username</label>
+        <input
+          type="text"
+          name="user"
+          value="parbhatkuamr@gmail.com"
+          readonly
+          required
+        />
+
+        <br /><br />
+
+        <label for="pass">Password</label>
+        <input
+          type="text"
+          name="pass"
+          id="pass"
+          placeholder="password is of 6 characters"
+          required
+        />
+
+        <br /><br />
+
+        <input type="submit" value="signin" />
+        <input type="reset" value="clear" />
+      </fieldset>
+    </form>
+  </body>
+</html>
