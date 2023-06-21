@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          table {
+            width: 200px;
+          }
+          table,tr,th,td,colgroup,col{
+            border: 1px solid #222;
+            border-collapse: collapse;
+          }
+    </style>
+   
+</head>
+<body>
+    <h1>column combinator || (not compatipale to any browser)</h1>
+    <table>
+        <colgroup>
+            <col span="2">
+            <col class="selected">
+        </colgroup>
+
+        <tbody>
+            <tr>
+               <td>A</td>
+               <td>B</td>
+               <td>C</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">D</td>
+                <td>E</td>
+            </tr>
+
+            <tr>
+                <td>F</td>
+                <td colspan="2">G</td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+</body>
+</html>

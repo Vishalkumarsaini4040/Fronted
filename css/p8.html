@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div a[target] {
+            background-color: slateblue;
+            color: #fff;
+            text-decoration: none;
+            padding: 12px 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Attribute selectors</h1>
+    <!--
+        [attr] [attr=value] [attr~=value] [attr|=value] [attr^=value] [attr$=value] [attr*=vale]
+    -->
+    <h1>[attr]</h1>
+
+    <div> 
+        <a href="p3.html" target="_self">home</a>
+        <a href="#">samlpe Link </a>
+        <a href="p3.html" target="_parent">home</a>
+        <a href="p1.html" target="_top">About</a>
+        <a href="https://gmail.com" target="_blank">login</a>
+    </div>
+</body>
+</html>
