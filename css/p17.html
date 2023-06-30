@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tech li::before {
+            content: "my course is";
+            color:cornflowerblue;
+            font-weight:bold;
+        }
+
+        .tech li::before {
+            content: "my course is";
+            color: crimson;
+            font-weight:bold;
+        }
+
+        ol li::before{
+            content: "miss.";
+            font-weight: blue;
+        }
+
+        /* class */
+        ol li::not(.p1){
+            color: deeppink;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h3>::after and ::before</h3>
+
+    <ul class="tech">
+        <li>Html</li>
+        <li>Js</li>
+        <li>jquery</li>
+        <li>React</li>
+    </ul>
+
+    <hr>
+
+    <ol>
+        <li class="p1"> Veda</li>
+          <li>prabhat</li>
+          <li>sonu</li>
+          <li>vivek</li>
+    </ol>
+</body>
+</html>

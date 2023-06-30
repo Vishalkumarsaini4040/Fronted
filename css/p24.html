@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:in-range {
+            border: 2px solid greenyellow;
+            background-color: greenyellow;
+        }
+        
+        input:out-of-range {
+            border: 2px solid orangered;
+            background-color: orangered;
+        }
+    </style>
+</head>
+<body>
+    <h3>:in-range and :out-of-range</h3>
+
+    <h3 id="out"></h3>
+
+    <form action="">
+
+        <label for="">weight</label>
+        <input type="range" name="out" id="out1" min="0" >
+
+        <br><br>
+
+        
+        <label for="">weight</label>
+        <input type="range" name="weight" id="weight" min="0" max="200" value="0" step="5" style="width:100%">
+    </form>
+
+    <script>
+        function weighthander() {
+            var x = document.getElementById("weight");
+            var output = document.getElementById("out");
+            var output1 = document.getElementById("out1");
+
+            output.innerText = ${x.value} kg;
+        }
+    </script>
+</body>
+</html>

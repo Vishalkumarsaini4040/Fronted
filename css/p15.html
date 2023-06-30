@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,tr,th,td {
+            border: 1px solid #222;
+            border-collapse: collapse;
+        }
+
+        tr,td,th{
+            padding: 10px;
+        }
+    /* nth-child(position) can terget any child elements */
+       tr:nth-child(even) {
+        background-color: #ddd;
+        color: #222;
+       }
+
+       tr:nth-child(odd) {
+        background-color: slateblue;
+        color: #fff;
+       }
+    </style>
+</head>
+<body>
+    <h3>html tag:nth-child()</h3>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th colspan="2">Mobile</th>
+        </tr>
+        <tr>
+            <td>Raju</td>
+            <td>raju@gmail.com</td>
+            <td>9180924798</td>
+            <td>0939798785</td>
+        </tr>
+            <tr>
+                <td>Ananth</td>
+                <td>ananth@gmail.com</td>
+                <td>00989489894</td>
+                <td>90959875857</td>
+            </tr>
+            <tr>
+                <td>Raju</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+    </table>
+</body>
+</html>
