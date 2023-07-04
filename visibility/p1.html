@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <h3>visibility</h3>
+
+
+    <bottom id="show">show</bottom>
+    <bottom id="hide">hide</bottom>
+
+    <div id="card">
+        <h3>card header</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta debitis delectus impedit enim deserunt animi, necessitatibus, maiores repellendus quas quam sequi! Nam temporibus quo officiis, recusandae qui voluptatibus saepe eaque!</p>
+        <a href="#">Read more</a>
+    </div>
+
+    <script>
+        var card = document.getElementById("card");
+        document.getElementById("show").onclick = function(){
+            card.style.visibility= "visible";
+        };
+
+        document.getElementById("hide").onclick = function (){
+            card.style.visibility = "hidden";
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            padding: 20px;
+            width: 300px;
+            height: auto;
+        }
+
+        .form {
+            border: 1px solid #222;
+            padding: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+        .form .form-input {
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <div class="post">
+                <div class="form-input">
+                    <label for="user">username</label>
+                    <input type="text" name="user" id="user" required>
+                </div>
+                <div class="form-input">
+                    <label for="pass">password</label>
+                    <input type="password" name="pass" id="pass" required>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

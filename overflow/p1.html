@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            text-align: justify;
+            margin: 100px;
+            border: 3px solid #ff2200;
+        }
+
+        .card-1 {
+            overflow: hidden; /* auto,scroll,nonr,hidden */
+        }
+
+        .card-2 {
+            overflow: auto;
+        }
+
+        .card-3 {
+            overflow-x: scroll;
+            overflow-y: scroll;
+        }
+    </style>
+</head>
+<body>
+    <h3>overflow: hidden</h3>
+    <div class="card-1">
+        <p>lorem ipsum dolor sit amet consectetur adipisicing alite.my name is vishal kumar saini.</p>
+    </div>
+
+    <h3>overflow: auto</h3>
+    <div class="card-2">
+        <p>lorem ipsum dolor sit amet consectetur adipisicing alite.my name is vishal kumar saini.</p>
+    </div>
+
+    <h3>overflow-x and overflow-y</h3>
+    <div class="card-3">
+        <p>lorem ipsum dolor sit amet consectetur adipisicing alite.my name is vishal kumar saini.</p>
+    </div>
+</body>
+</html>
