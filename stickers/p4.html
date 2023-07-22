@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 0px;
+            margin: 0px;
+            overflow-x: hidden;
+        }
+
+        header {
+            width: 100%;
+            background-color: crimson;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header h3 {
+            color: #ffff;
+            font-size: x-large;
+            text-transform: uppercase;
+        }
+
+        header .menu a{
+            text-decoration: none;
+            background-color: gold;
+            color: #fff;
+        }
+
+        header button {
+            display: none;
+        }
+
+        footer {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 12px;
+        }
+
+        .main {
+            display: flex;
+            height: 100vh;
+        }
+
+        .main aside {
+            background: cornflowerblue;
+            padding: 20px;
+            width: 100px;
+        }
+
+        .main div {
+            padding: 20px;
+        }
+
+        @media screen and (max-width:780px) {
+            header{
+                display: block
+            }
+
+            header .menu a{
+                display: none;
+            }
+
+            header button {
+                display: block;
+                background-color: transparent;
+                border: none;
+                color: #fff;
+                font-size: xx-large;
+            }
+
+            button {
+                position: absolute;
+                top: 30px;
+                right: 20px;
+                cursor: pointer;
+            }
+
+            .menu.responsive {
+                display: block;
+                transition: all 0.5s ease;
+            }
+
+            .menu.responsive a {
+                display: block;
+                text-align: left;
+                width: 100%;
+                transition: all 0.5s ease;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h3>Header</h3>
+        <nav class="menu" id="topmenu">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+        <botton class="icon" onclick="tooglemenu()">
+        <i class="fas fa-bars"></i>
+    </botton>
+    </header>
+
+    <section class="main">
+        <aside>
+            sidebar
+        </aside>
+        <div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa magni quia eius et consectetur earum dolorum ab voluptatem similique sit sequi deserunt commodi maxime quae, ad quod blanditiis facilis odit.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>All rights reserved</p>
+    </footer>
+
+    <script>
+        const tooglemenu = () => {
+            let x = document.getElementById('topMenu');
+            if(x.className === "menu") {
+                //x.className =="responsive";
+                x.classList.add("responsive");
+            } else{
+                //x.classname = "menu";
+                x.classList.remove("responsive");
+            }
+        }
+    </script>
+</body>
+</html>

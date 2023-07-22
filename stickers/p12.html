@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height:100vh;
+            display: grid;
+            grid-template-areas: 
+               "head head"
+               "mBody side"
+               "foot foot";
+               grid-column-gap: 10px;
+               grid-row-gap: 10px;
+               grid-template-rows: 80px 1frt;
+               grid-template-columns: 1fr 10%;
+            
+        }
+
+        header,article,aside,footer {
+            background-color: green;
+
+        }
+
+        #head {grid-area: head;}
+        #mBody {grid-area: mBody;}
+        #side {grid-area: side;}
+        #foot {grid-area: foot;}
+    </style>
+</head>
+<body>
+    <header id="head">
+        <h1>Top Header</h1>
+    </header>
+    <article id="mBody">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum architecto consequatur rerum voluptatem? Ratione officiis accusantium autem veritatis, harum consequatur debitis libero aut ipsam! Deserunt autem natus ex in architecto.</p>
+    </article>
+    <aside id="side">
+        <p>Sidebar</p>
+    </aside>
+    <footer id="foot">
+        <p>All rights are reserved &copy: 2021</p>
+    </footer>
+</body>
+</html>

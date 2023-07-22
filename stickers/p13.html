@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .gallery {
+            display: grid;
+            grid-template-columns:repeat(auto-fill,minmax(200px,1fr)) ;
+        }
+
+        .gallery img {
+            max-width: 100%;
+        }
+        
+.gallery img {
+    /*grid-column:span 2;
+    grid-row: span 3; */
+    grid-column: span;
+    grid-row: span;
+}
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <img src="./image/1 (1).jpg" alt="">
+        <img src="./image/1 (1).png" alt="">
+        <img src="./image/1 (2).jpeg" alt="">
+        <img src="./image/1 (2).png" alt="">
+        <img src="./image/1 (3).jpeg" alt="">
+        <img src="./image/1 (3).png"  alt="">
+        <img src="./image/1 (4).jpeg" alt="">
+        <img src="./image/1 (4).png" alt="">
+        <img src="./image/1 (5).jpeg" alt="">
+        <img src="./image/1.jpg.jpeg" alt="">
+    </div>
+</body>
+</html>

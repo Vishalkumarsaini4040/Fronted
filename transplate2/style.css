@@ -1,0 +1,63 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.side {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #aaa;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    overflow: auto;
+    text-align: center;
+}
+
+.side a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+}
+
+.side a.active {
+    background-color: green;
+    color: #fff;
+
+}
+
+.side a:hover {
+    background-color: crimson;
+    color: #fff;
+}
+
+.text {
+    margin-left: 220px;
+}
+
+ @media screen and (max-width:700px) {
+    .side {
+        width: 100%;
+        height: auto;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .side a {
+        width: 100%;
+
+    }
+
+    .text {
+        margin-left: 0;
+    }
+ }

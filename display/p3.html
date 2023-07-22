@@ -4,8 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            letter-spacing: 1px;
+            padding-top: 10px;
+
+        }
+
+        div {
+            background-color: red;
+        }
+
+        div span {
+            background-color: black;
+            color: #fff;
+            margin: 1px;
+        }
+
+        div, span {
+            padding: 10px;
+            border-radius: 7px;
+        }
+
+        div, section {
+            margin: 20px;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <span>frist</span>
+        <span>second</span>
+        <span>third</span>
+    </div>
+    <div class="container">
+        <span>frist</span>
+        <span>second</span>
+        <span>third</span>
+    </div>
+
+    <hr>
+    <section>
+        <label for="dispaly">choose display value</label>
+        <select id="dispaly">
+            <option selected>block</option>
+            <option>inline</option>
+            <option>inline-block</option>
+            <option>none</option>
+            <option>flex</option>
+            <option>inline-flex </option>
+            <option>grid</option>
+            <option> inline-grid </option>
+            <option>table </option>
+            <option>list-iteam</option>
+        </select>
+    </section>
+    <script>
+        const items = document.querySelectorall('.container');
+        const select = document.querySelector('select');
+
+        function update() {
+            iteam.foreach(function(item){
+                item.style.dispaly =select
+            })
+        }
+    </script>
 </body>
 </html>

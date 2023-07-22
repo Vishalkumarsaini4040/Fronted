@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+            grid-gap: 10px;
+        }
+
+        .gallery img {
+            max-width: 100%;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="gallery">
+        <img src="https://picsum.photos/id/1001/1200/800" alt="">
+        <img src="https://picsum.photos/id/1025/1200/800" alt="">
+        <img src="https://picsum.photos/id/220/1200/800" alt="">
+        <img src="https://picsum.photos/id/250/1200/800" alt="">
+        <img src="https://picsum.photos/id/230/1200/800" alt="">
+        <img src="https://picsum.photos/id/240/1200/800" alt="">
+    </div>
+</body>
+</html>

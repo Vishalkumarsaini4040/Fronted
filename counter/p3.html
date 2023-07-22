@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+    
+            .container{
+                width: 100%;
+                height:100vh;
+                background-color: beige;
+                padding: 20px;
+                counter-reset: ch;
+            }
+            h2::before{
+                counter-increment: ch;
+                content: counter(ch) ".";
+            }
+    
+            h4{
+                margin-left: 30px;
+                counter-reset: subt;
+            }
+            h2{
+                counter-reset: topic;
+            }
+            h4::before{
+                counter-increment: topic;
+                content: counter(ch) " ." counter(topic) " ";
+            }
+    
+            p{
+                margin-left: 60px;
+            }
+            p::before{
+                counter-increment: subt;
+                content: counter(ch) "." counter(topic) "." counter(subt) " ";
+            }
+    
+        </style>
+    
+        
+    </head>
+    <body>
+        <div class="container">
+            <h2>HTML</h2>
+                <H4>header tag</H4>
+                    <p>h1 tag</p>
+                    <p>h2 tag</p>
+                    <p>h3 tag</p>
+                    <p>h4 tag</p>
+                <h4>formate tag</h4>
+                    <p>paragraph tag</p>
+                    <p>bold tag</p>
+                    <p>underlin tag</p>
+                <h4>table</h4>
+                <h4>list tag</h3>
+                    <p>unorder list</p>
+                    <p>ordered list</p>
+                    <p>definition list</p>
+                <h4>form tag</h4>
+            <h2>CSS</h2>
+                <H4>colors</H3>
+                    <p>hex code</p>
+                    <p>color name</p>
+                    <p>rgb function</p>
+                    <p>rgba function</p>
+                <h4>background</h3>
+                <h4>font</h4>
+                    <p>font size</p>
+                    <p>font family</p>
+                    <p>font waight</p>
+    
+            <h2>java script</h1>
+                <h4>variables</h4>
+                    <p>var keyword</p>
+                    <p>let keyword</p>
+                    <p>const keyword</p>
+                <h4>oparators</h4>
+                <h4>conditional and looping</h4>
+                    <p>if</p>
+                    <p>if and else</p>
+                    <p>if,else if and else</p>
+                    <p>switc case</p>
+                <h4>array</h4>
+    
+        </div>
+    </body>
+    </html>
+    
+</body>
+
+</html>
