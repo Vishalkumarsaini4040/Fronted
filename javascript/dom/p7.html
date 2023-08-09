@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>document.cookies</h3>
+
+    <button onclick="set()">set cookies</button>
+    <script>
+            function set() {
+                var x =  prompt('Enter your Input?');
+                document.cookie = `userId=${x};expires=5 Aug 2023 12:00:00 AM GMT+5.30`;
+                alert("cookies successfully set");
+                window.location.reload(); /* refreshing current page */
+            }
+
+            // self trigger function
+            (function(){
+                console.log(document.cookies); // string
+                let res = document.cookies.split("="); // break string into array
+                console.log('res = ' , res);
+                console.log('res [0]= ' , res[0]);
+                console.log('res [1]= ' , res[1]);
+                document.getElementById('result').innerText = ` key = ${res[0]} and value = ${res[1]}`;
+            })();
+
+
+                
+
+            
+    </script>
+</body>
+</html>

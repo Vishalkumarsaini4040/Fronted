@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>document.focus()</h3>
+    <P id="log">Awaiting focus check.</P>
+    <button onclick="handler()">Click me</button>
+
+    <script>
+        function checkpageFocus() {
+            log.textContent = " this document has the focus";
+            body.style.background = "darkcyan";
+            body.style.color = "#fff";
+        }  {
+            log.textContent = "This document doesnot have the focus";
+            body.style.background = "#aaa";
+            body.style.color = "#ccc";
+
+
+        }
+
+        function handler() {
+            /* BOM */
+            window.open("https://be-pratical.com","bepratical", 'width-800,height-400,left=100,right=100');
+        }
+
+        setInterval(checkpageFocus,300);
+    
+    </script>
+</body>
+</html>

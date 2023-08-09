@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>document.cookie</h1>
+
+    <h1 id="resulit"></h1>
+
+    <button onclick="set()">Set cookie</button>
+    <button onclick="clearHandler()">clear cookie</button>
+
+
+    <script>
+         function set() {
+            var x = prompt('Enter your Input');
+            document.cookie = `userId=${x}; expires=8 AUG 2023 12:00 AM GMT+5:30`;
+            alert("cookie successfully set");
+            window.location.reload(); /* refreshring current page */
+         }
+
+         // clear cookie
+         function clearHandler() {
+            if(confirm(`Are you sure to clear cookies`)) {
+                let myTime = new Date();
+
+                mytime.setTime(myTime.getTime() -1);
+                console.log('myTime' , myTime.toGMTString());
+                 
+            }
+         }
+    </script>
+
+</body>
+</html>

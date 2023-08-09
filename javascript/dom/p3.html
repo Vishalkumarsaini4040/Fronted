@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 100%;
+            overflow: hidden;
+            height: auto;
+            margin: 0;
+        }
+
+        #userInfo {
+            padding: 20px;
+            border: 2px solid #222;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+            grid-gap: 10px
+        }
+
+        #userInfo div {
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            padding: 20px;
+        }
+
+        #userInfo div h3 {
+            text-transform: uppercase;
+            color: slateblue;
+        }
+
+        #userInfo div img {
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+
+    </style>
+</head>
+<body>
+    <section id="userInfo"></section>
+
+    <script>
+        var user = [
+            {     // key: value
+                id:1,
+                name: "rajesh",
+                Image: "https://picsum.photos/id/123/300/300",
+                email: "rajesh@gmail.com",
+                isAdmin: false
+                
+            },
+
+            {
+                id:2,
+                name: "prabhat",
+                Image: "https://picsum.photos/id/124/300/300",
+                email: "prabhat@gmail.com",
+                isAdmin: true
+            },
+
+            {
+                id:3,
+                name: "suresh",
+                Image: "https://picsum.photos/id/126/300/300",
+                email: "suresh@gmail.com",
+                isAdmin: false
+            }
+        
+        ];
+
+        console.log('user =' , users);
+
+		
+
+    var container = document.querySelector('#userInfo');
+
+           user.forEach(function(val,index){
+            //  create html elements
+            let card = document.createElement('div');
+            let eImage = document.createElement('img');
+            let eName = document.createElement('h3');
+            let eEmail = document.createElement('p');
+            let eisAdmin = document.createElement('p');
+            let eLink = document.createElement('a');
+
+            // add contents / data to the elements
+            eImage.src = val.image;
+            eImage.src = "No.image";
+            eName.textContent = `${val.id} ${val.name}`;
+            eEmail.textContent =  val.email;
+            eisAdmin.textContent = val.isAdmin ? "Admin": "NonAdmin";
+            eLink.href = val.image;
+            eLink.textContent = "image link";
+            eLink.target = "_blank";
+
+            card.appendChild(eImage);
+            card.appendChild(eName);
+            card.appendChild(eEmail);
+            card.appendChild(eisAdmin);
+            card.appendChild(eLink);
+
+
+            container.appendChild(card);
+
+           });
+
+    </script>
+</body>
+</html>

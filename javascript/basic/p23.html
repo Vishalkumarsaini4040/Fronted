@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3> Function definition & expression</h3>
+
+    <script>
+        // function definition
+        function sum(a,b) {
+            return a + b;
+        }
+
+        // function expression (conts functions)
+        //loal function
+        var product = function(a,b) {
+            return a * b;
+        }
+
+        /* 
+          
+          arrow function
+
+        */
+        var rem = (a,b) => {
+            return a % b;
+        }
+
+        document.write(`<h3> sum = ${ sum(33,44 ) } </h3>`);
+        document.write(`<h3> product = ${ product(33,44 ) } </h3>`);
+        document.write(`<h3> rem = ${ rem(33,4 ) } </h3>`);
+    </script>
+</body>
+</html>

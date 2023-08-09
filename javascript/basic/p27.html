@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head><body>
+   <h3> isFinite() </h3> 
+
+   <script>
+    document.write(`<h3> isFinite(123) = ${ isFinite(123) } </h3>`);
+    document.write(`<h3> isFinite(-12.33) = ${ isFinite(-12.33) } </h3>`);
+    document.write(`<h3> isFinite(12-3) = ${ isFinite(12-3) } </h3>`);
+    document.write(`<h3> isFinite(0) = ${ isFinite(0) } </h3>`);
+    document.write(`<h3> isFinite("123") = ${ isFinite("123") } </h3>`);
+    document.write(`<h3> isFinite(true) = ${ isFinite(true) } </h3>`);
+
+    document.write(`<h3> isFinite("be-pratical") = ${ isFinite("be-pratical") } </h3>`);// false
+    document.write(`<h3> isFinite("21/2/5") = ${ isFinite("21/2/5") } </h3>`);// false
+    document.write(`<h3> isFinite("true") = ${ isFinite("true") } </h3>`);// false
+    document.write(`<h3> isFinite(0/0) = ${ isFinite(0/0) } </h3>`); // false 
+   </script>
+</body>
+</html>

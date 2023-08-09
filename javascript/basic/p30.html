@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Arrays as constructors parameter</h3>
+    <script>
+        var y = new Array('Ramesh', 'suman', 'Naveen', 'Radha', 'Manju');
+
+        document.write(`<h3> ${ y } </h3>`);
+        document.write(`<h3> ${ y[3] } </h3>`);
+
+        var i =0;
+        while(i<y.length ) {
+            document.write(`<h3  style=" color:red">${y[i]}</h3>`);
+            i++;
+        };
+    </script>
+</body>
+</html>

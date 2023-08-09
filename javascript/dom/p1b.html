@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <section id="blk"></section>
+    <button onclick="addContent()">Add Block</button>
+
+    <script>
+        function addContent() {
+            var content = `<div>
+                <h1>Welcome to js</h1>
+                <h3>sub title of js</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, incidunt! Commodi corrupti amet odit! Nesciunt quo dolores corporis quidem. Repellat deleniti perferendis eaque sint molestiae fugit veritatis quas consectetur porro.
+                <button onclick="removecontent()" >Remove Block</button>
+                 </div>`;
+
+                 document.getElementById('blk').innerHTML = content;
+
+                }
+
+                
+    </script>
+</body>
+</html>

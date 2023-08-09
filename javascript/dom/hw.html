@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+#op{
+width: 50%;
+height: 100%; 
+grid-gap: 10px;
+
+
+
+}
+#op div img{
+width: 360px;
+height: 250px;
+align-items: center;
+
+
+
+
+
+
+}
+#op div{
+border: 5px solid blanchedalmond;
+text-align: center;
+background-color: rgb(156, 84, 219);
+color:black;
+
+
+}
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+  
+  
+  <section id="op"></section>
+  
+  
+  
+  
+  <script>
+
+
+var arry =[
+  
+  {
+    id: 1,
+    title: "iPhone 9",
+    description: "An apple mobile which is nothing like apple",
+    price: 549,
+    discountPercentage: 12.96,
+    rating: 4.69,
+    stock: 94,
+    brand: "Apple",
+    category: "smartphones",
+    image: "https://i.dummyjson.com/data/products/1/thumbnail.jpg",  
+  },
+  {
+      id: 2,
+      title: "iPhone X",
+      description: "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...", 
+      price: 899,
+      discountPercentage: 17.94,
+      rating: 4.44,
+      stock: 34,
+      brand: "Apple",
+      category: "smartphones",
+      image: "https://i.dummyjson.com/data/products/2/thumbnail.jpg",},
+  
+      {
+      id: 3,
+      title: "Samsung Universe 9",
+      description: "Samsung's new variant which goes beyond Galaxy to the Universe",
+      price: 1249,
+      discountPercentage: 15.46,
+      rating: 4.09,
+      stock: 36,
+      brand: "Samsung",
+      category: "smartphones",
+      image: "https://i.dummyjson.com/data/products/3/thumbnail.jpg",},
+  {
+      id: 4,
+      title: "OPPOF19",
+      description: "OPPO F19 is officially announced on April 2021.",
+      price: 280,
+      discountPercentage: 17.91,
+      rating: 4.3,
+      stock: 123,
+      brand: "OPPO",
+      category: "smartphones",
+      image: "https://i.dummyjson.com/data/products/4/thumbnail.jpg",}
+  
+  
+  ]  ;
+  console.log(arry)
+var conatainer=document.querySelector("#op");
+arry.forEach(function( val,index){
+
+var ediv=document.createElement('div');
+var etitle=document.createElement('h3');
+var discription=document.createElement('h4');
+var price=document.createElement('h4');
+var eImage=document.createElement('img');
+var ediscountPercentage=document.createElement("h4")
+var erating=document.createElement('h4')
+var estoke=document.createElement('h4')
+var ebrand=document.createElement('h4')
+var ecategory=document.createElement('h4')
+
+//
+eImage.src=val.image
+etitle.textContent=` Title:${val.title}`
+discription.textContent=`Discription :${val.description}`
+price.textContent=`Price:${val.price}`
+ediscountPercentage.textContent=`DiscountPackage:${val.discountPercentage}`
+erating.textContent=`Rating:${val.rating}`
+estoke.textContent=`Stoke:${val.stock}`
+ebrand.textContent=`Brand:${val.brand}`
+ecategory.textContent=`Category:${val.category}`
+//data adding
+ediv.appendChild(eImage);
+ediv.appendChild(etitle)
+ediv.appendChild(discription)
+ediv.appendChild(price)
+ediv.appendChild(ediscountPercentage)
+ediv.appendChild(erating)
+ediv.appendChild(estoke)
+ediv.appendChild(ebrand)
+ediv.appendChild(ecategory)
+conatainer.appendChild(ediv);
+
+})
+
+
+
+
+
+  </script>
+</body>
+</html>

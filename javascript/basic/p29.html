@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Arrays using constructors</h3>
+
+    <script>
+        // ref /instance => x is an arrays name
+        var x = new Array(); // x = []
+
+        // assign the value
+        x[0] = "balue";
+        x[0] = "Red";
+        x[0] = "Black";
+        x[0] = "Crimson";
+
+        document.write(`<h3>${ x } </h3>`);
+        document.write(`<h3>${ x[3] } </h3>`);
+
+        /* 
+         array.foeEach(call back function)
+               array.forEach(function(param){
+                        // param => index
+               });
+
+        */
+
+        x.forEach(function(value,index) {
+            document.write(`<h2 style="color:red;">  ${index} ${value} </h2>`);
+        });
+        
+
+
+    </script>
+</body>
+</html>

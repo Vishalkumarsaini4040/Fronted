@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Objects arrays</h3>
+
+    <script> 
+
+        var x = {}; // empty objects
+        var y = {
+            id: 1,
+            name: "John",
+        };
+
+        var user = [
+            {
+                //key:value => property
+                id: 1,
+                name:"raju",
+                email:"raju@gmail.com",
+
+            },
+            {
+                id: 2,
+                name:"pooja",
+                email:"pooja@gmail.com",
+            },
+            {
+                id: 3,
+                name:"chandu",
+                email:"chandu@gmail.com",
+            },
+        ];
+
+        for(i=0; i< user.length; i++) {
+            document.write(`<h3></h3>`) 
+        };
+
+
+        for(i=0;i<user.length;i++) {
+
+            document.write(`<h3> id =${user[i]}</h3>`);
+            document.write(`<h3> name =${user[i].name}</h3>`);
+            document.write(`<h3> email =${user[i] .email}</h3>`);
+            
+
+        }
+
+    </script>
+</body>
+</html>

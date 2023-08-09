@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>function</h1>
+
+    <script>
+        // getname(), get_name() (get-name() -> dont use) get_my_name() getMyName()
+        // (get-name() -> dont use)
+        // function name(params) {
+
+       //  }
+
+       // name(param value); -> direct call
+       /*
+
+        1. call by value - direct call
+        2. call bt ref (indirect call) not applicable in  js
+        */$
+        var x=123
+        
+
+        function display(name) {
+            document.write(`<h1> Welcome to function = ${name}</h1>`);
+        }
+
+        // direct call
+        display("javaScript");
+        display(); // underfined - param
+        display(""); // empty value
+        display(null); //null
+
+        function product(x,y) {
+            document.write(`<h1> product = ${x * y}</h1>`);
+        }
+
+        product(12,30);
+        product(16,4);
+
+        // (a+b)2-2ab
+        function ex1(a,b) {
+            let res= ((a*a) + (b*b)); 
+            document.write (res)
+        }
+
+    </script>
+</body>
+</html>

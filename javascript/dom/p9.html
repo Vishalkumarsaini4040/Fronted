@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 50%;
+        margin: auto;
+        border: 1px solid #222;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 20px;
+      }
+      .container select {
+        width: 200px;
+      }
+      .container .btn {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>document.queryselectorAll</h1>
+    <form action="">
+      <section class="container">
+        <div class="left">
+          <select id="no" name="no" size="8" multiple="multiple">
+            <option value="blue">blue</option>
+            <option value="white">white</option>
+            <option value="orange">orange</option>
+            <option value="red">red</option>
+            <option value="black">black</option>
+            <option value="green">green</option>
+            <option value="yellow">yellow</option>
+            <option value="pink">pink</option>
+            <option value="skyblue">skyblue</option>
+            <option value="grey">grey</option>
+          </select>
+        </div>
+        <div class="btn">
+          <button id="add">add selection</button>
+          <button id="remove">remove selection</button>
+        </div>
+        <div class="right">
+          <select name="yes" id="yes" size="8" multiple="multiple"></select>
+        </div>
+      </section>
+    </form>
+    <script src="./dropeSelect.js"></script>
+  </body>
+</html>

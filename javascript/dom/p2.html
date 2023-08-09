@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .txt {
+            color: crimson;
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+
+        .blk {
+            color: deepskyblue;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <h3>document.getElementByclassName</h3>
+    <p class="txt">lorem ipsum</p>
+    <p class="txt">lorem ipsum</p>
+    <p class="txt">lorem ipsum</p>
+    <p class="txt">lorem ipsum</p>
+    <p class="txt">lorem ipsum</p>
+    <p class="txt">lorem ipsum</p>
+
+    <p class="blk">lorem ipsum</p>
+    <p class="blk">lorem ipsum</p>
+    <p class="blk">lorem ipsum</p>
+    <p class="blk">lorem ipsum</p>
+
+    <button onclick="handler()" >Click me</button>
+    <script>
+        function handler() {
+            var num = document.getElementByclassName("text").length;
+            var num1 = document.getElementByclassName("blk").length;
+            alert('num of para are = ' + num);
+            alert('num of blocks are = ' + num1);
+
+        }
+    </script>
+</body>
+</html>

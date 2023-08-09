@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 50px;
+            background-color: #4f3;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h3>Query Selector</h3>
+    <button onclick="clickme()" >Click me</button>
+
+    <section>
+        <div id="1" class="box"></div>
+        <div id="2" class="box"></div>
+        <div id="3" class="box"></div>
+        <div id="4" class="box"></div>
+        <div id="5" class="box"></div>
+        <div id="6" class="box"></div>
+        <div id="7" class="box"></div>
+        <div id="8" class="box"></div>
+        <div id="9" class="box"></div>
+        <div id="10" class="box"></div>
+
+
+    </section>
+
+    <script>
+        function clickMe() {
+            let selBox = document.querySelectorAll('.box');
+            console.log('total boxes =' , selBox)
+
+            for(i=0; i < selBox.lenght; i++) {
+                seBox[i].style.backgroundColor = "orangered";
+            }
+        }
+    </script>
+</body>
+</html>

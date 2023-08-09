@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Scopes</h3>
+    <script>
+
+
+        /* var is a weaker singal and always have global scope */
+        /*
+           let and const are block scope variables
+        */
+            //const a = 246;
+
+            if(15 > 12) {
+                var a = 155; // globel
+                //let a = 122; // block , (re assign the value)
+                //const a = 144; // block (fixed value - can'nt re-assign the value)
+                document.write(`<h3>Local (block scope) = ${ a }</h3>`); // block scope
+            }
+
+            document.write(`<h3>global (global scope) = ${ a }</h3>`); // global scope
+    </script>
+</body>
+</html>
